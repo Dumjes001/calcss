@@ -16,11 +16,12 @@ const deleter = () => {
 
 }
 
-const appendNumber = () => {
-
+const appendNumber = (number) => {
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
 }
 
-const chooseOperation = () => {
+const chooseOperation = (operation) => {
 
 }
 
